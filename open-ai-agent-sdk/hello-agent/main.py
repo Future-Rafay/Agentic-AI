@@ -42,10 +42,15 @@ result = Runner.run_sync(
 
 def main():
 
-    print("Hello Agent-1!\n")
+    print("Hello Agent!\n")
 
     print("User Input:", result.input)
     print("Result:", result.final_output)
+
+    # Function calls itself,
+    # Looping in smaller pieces,
+    # Endless by design.
+
 
 
 if __name__ == "__main__":
