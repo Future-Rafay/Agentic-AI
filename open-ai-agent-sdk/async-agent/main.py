@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI
 from agents.run import RunConfig
 
+
 load_dotenv()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")

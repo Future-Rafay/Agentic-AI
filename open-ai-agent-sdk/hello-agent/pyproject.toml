@@ -1,7 +1,7 @@
 [project]
-name = "project-1"
+name = "hello-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = 'A simple agent that uses the OpenAI Agent SDK to respond to user input.'
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -9,3 +9,6 @@ dependencies = [
     "openai-agents>=0.1.0",
     "python-dotenv>=1.1.1",
 ]
+
+authors = [
+    { name = "Abdul Rafay", email = "rafaynadeem77@gmail.com" }
