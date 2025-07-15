@@ -1,4 +1,5 @@
 # Single tool calling agent
+# Rafay's Personal Agent
 
 import os
 from dotenv import load_dotenv
@@ -151,6 +152,7 @@ rafay_agent = Agent(
         "You ALWAYS have to  call function get_rafay_info to get Rafay's information.\n"
     ),
     tools=[get_rafay_info],
+    model=model,
 )
 
 def main():
