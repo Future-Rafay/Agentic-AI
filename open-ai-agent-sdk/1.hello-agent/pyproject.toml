@@ -1,7 +1,7 @@
 [project]
-name = "async-agent"
+name = "hello-agents"
 version = "0.1.0"
-description = "Add your description here"
+description = 'Simple agents that uses the OpenAI Agent SDK to respond to user input.'
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

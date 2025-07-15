@@ -1,8 +1,9 @@
+# Sync Hello Agent
+
 import os
 from dotenv import load_dotenv
 from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI
 from agents.run import RunConfig
-import asyncio
 
 load_dotenv()
 
@@ -34,18 +35,19 @@ agent = Agent(
     model=model,
 )
 
-async def main():
+result = Runner.run_sync(
+    agent,
+    "What is the capital of Pakistan?",
+    run_config=config,
+)
 
-    print("Hello Async Agent!\n")
 
-    result = await Runner.run(agent,"Explain how a loop works in programming. Keep it brief.", run_config=config)
+def main():
+
+    print("Hello Agent!\n")
 
     print("User Input:", result.input)
     print("Result:", result.final_output)
 
-    # Function calls itself,
-    # Looping in smaller pieces,
-    # Endless by design.
-
 if __name__ == "__main__":
-   asyncio.run(main())
+    main()

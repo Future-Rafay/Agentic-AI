@@ -1,11 +1,10 @@
 [project]
-name = "Rafay-agent"
+name = "2-tool-calling"
 version = "0.1.0"
-description = 'A simple agent that uses the OpenAI Agent SDK and GEMINI API KEY to respond to user input.'
+description = "Simple Agents That call tools to respond to user query"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "openai>=1.95.1",
     "openai-agents>=0.1.0",
     "python-dotenv>=1.1.1",
 ]

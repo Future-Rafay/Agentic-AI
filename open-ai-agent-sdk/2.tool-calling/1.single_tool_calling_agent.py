@@ -1,3 +1,5 @@
+# Single tool calling agent
+
 import os
 from dotenv import load_dotenv
 from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI, function_tool
@@ -150,7 +152,6 @@ rafay_agent = Agent(
     ),
     tools=[get_rafay_info],
 )
-
 
 def main():
 

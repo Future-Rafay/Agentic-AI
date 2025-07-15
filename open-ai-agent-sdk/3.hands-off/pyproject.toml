@@ -1,7 +1,7 @@
 [project]
-name = "hello-agent"
+name = "hands-off-agents"
 version = "0.1.0"
-description = 'A simple agent that uses the OpenAI Agent SDK to respond to user input.'
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
