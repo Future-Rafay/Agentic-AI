@@ -4,13 +4,12 @@
 import time
 import os
 from dotenv import load_dotenv
-from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI, enable_verbose_stdout_logging, handoff, RunContextWrapper
+from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI, handoff, RunContextWrapper
 from agents.run import RunConfig
 from rich import print
 
 
 load_dotenv()
-# enable_verbose_stdout_logging()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
